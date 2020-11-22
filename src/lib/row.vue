@@ -98,10 +98,12 @@
           column,
           space
         },
+
         computed: {
             isFolder() {
                 return this.model[this.custom_field.lists] && this.model[this.custom_field.lists].length
             }
+
         },
       created() {
         console.log(this.custom_field)
