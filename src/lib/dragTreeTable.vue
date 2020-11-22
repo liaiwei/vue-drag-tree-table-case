@@ -66,6 +66,7 @@
       }
     },
     props: {
+
       isdraggable: {
         type: Boolean,
         default: true
@@ -215,8 +216,6 @@
             hoverBlock.children[0].style.opacity = 0.5
           }
         }
-
-        
         this.targetId = targetId;
         this.whereInsert = whereInsert;
       },

@@ -103,7 +103,10 @@
                 return this.model[this.custom_field.lists] && this.model[this.custom_field.lists].length
             }
         },
-        methods: {
+      created() {
+        console.log(this.custom_field)
+      },
+      methods: {
             toggle() {
                 if(this.isFolder) {
                     this.model[this.custom_field.open] = !this.model[this.custom_field.open];
